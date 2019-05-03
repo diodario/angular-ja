@@ -1,31 +1,34 @@
 # Upgrading from AngularJS to Angular
 
-_Angular_ は、現行の、そして未来のAngularの名称です。<br />
-_AngularJS_ は、Angularのバージョン1系を指す名称です。
+_Angular_ is the name for the Angular of today and tomorrow.<br />
+_AngularJS_ is the name for all 1.x versions of Angular.
 
-_AngularJS_ アプリはそれ自体で素晴らしいので、_Angular_ に移行する前に、必ずビジネスケースを検討する必要があります。
-特に重要な事項は、移行にかかる時間と努力です。
-このガイドでは _AngularJS_ プロジェクトを _Angular_ プラットフォームに効率的に移行するための組み込みツールについて、一つ一つ説明します。
+AngularJS apps are great.
+Always consider the business case before moving to Angular.
+An important part of that case is the time and effort to get there.
+This guide describes the built-in tools for efficiently migrating AngularJS projects over to the
+Angular platform, a piece at a time.
 
-一部の _AngularJS_ アプリケーションは他のものよりもアップグレードが簡単です。
-自分で簡単にできるようにする方法はたくさんあります。
-アップグレードプロセスを開始する前であっても、_AngularJS_ アプリケーションを _Angular_ に適合する形に準備し、寄せることは可能です。
-これらの準備ステップはすべて、コードをより分離し、保守しやすくし、最新の開発ツールとよりよく整合させるためのものです。
-つまり、アップグレードが簡単になるだけでなく、既存の _AngularJS_ アプリケーションも改善されます。
-
+Some applications will be easier to upgrade than others, and there are
+many ways to make it easier for yourself. It is possible to
+prepare and align AngularJS applications with Angular even before beginning
+the upgrade process. These preparation steps are all about making the code
+more decoupled, more maintainable, and better aligned with modern development
+tools. That means in addition to making the upgrade easier,
+you will also improve the existing AngularJS applications.
 
 One of the keys to a successful upgrade is to do it incrementally,
 by running the two frameworks side by side in the same application, and
-porting AngularJS components to Angular one by one. 
-アップグレードを成功させる鍵の1つは、段階的にアップグレードすることです。
-方法としては、_AngularJS_ と _Angular_ の2つのフレームワークを同じアプリケーション内で並行して実行し、AngularJSコンポーネントをAngularに1つずつ移植するということになります。
-これにより、大規模で複雑なアプリケーションでも他の業務を中断することなくアップグレードできます。これは、作業を共同で、しかも一定期間にわたって行うことができるためです。
-_Angular_ の `upgrade`モジュールは、段階的なアップグレードをシームレスにできるように設計されています。
+porting AngularJS components to Angular one by one. This makes it possible
+to upgrade even large and complex applications without disrupting other
+business, because the work can be done collaboratively and spread over
+a period of time. The `upgrade` module in Angular has been designed to
+make incremental upgrading seamless.
 
-## 準備
+## Preparation
 
-_AngularJS_ アプリケーションの構成には、様々な種類があります。
-When you begin to upgrade these applications to Angular, some will turn out to be
+There are many ways to structure AngularJS applications. When you begin
+to upgrade these applications to Angular, some will turn out to be
 much more easy to work with than others. There are a few key techniques
 and patterns that you can apply to future proof apps even before you
 begin the migration.
